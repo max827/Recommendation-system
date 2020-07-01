@@ -93,10 +93,17 @@
         </dependency>
 
         <!--   谷歌的工具包     -->
+        <!-- 这个版本太旧了，GitHub上传的时候会报错-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.google.guava</groupId>-->
+        <!--            <artifactId>guava</artifactId>-->
+        <!--            <version>19.0</version>-->
+        <!--        </dependency>-->
+        <!--        新的版本-->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>19.0</version>
+            <version>[24.1.1,)</version>
         </dependency>
 
 <!--        &lt;!&ndash; MongoDB  &ndash;&gt;-->
