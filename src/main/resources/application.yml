@@ -1,0 +1,29 @@
+spring:
+
+  jpa:
+    hibernate:
+      #更新或创建数据表
+      ddl-auto: update
+    #决定对数据库的SQL操作是否显示到控制台
+    show-sql: false
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.100.90.238 :3306/movie_web
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    #用于解决总是连着连着断了的问题
+    hikari:
+      max-lifetime: 30000
+
+  thymeleaf:
+    cache: false
+
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+    freemarker:
+      cache: false    #页面不加载缓存，修改即时生效
